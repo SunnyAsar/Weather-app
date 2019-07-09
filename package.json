@@ -1,0 +1,30 @@
+{
+  "name": "Weather-app",
+  "version": "1.0.0",
+  "description": "A Weather App using OpenWeather Api and Js Promises",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SunnyAsar/Weather-app.git"
+  },
+  "keywords": [],
+  "author": "Sunny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SunnyAsar/Weather-app/issues"
+  },
+  "homepage": "https://github.com/SunnyAsar/Weather-app#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.3",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
