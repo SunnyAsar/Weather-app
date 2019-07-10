@@ -3,12 +3,13 @@ import DomHandler from './lib/domHandler'
 
 document.addEventListener('DOMContentLoaded', ()=> {
   const weatherForm = document.getElementById('weather-form').addEventListener('submit', fetchWeather)
+  document.getElementById('toggle').addEventListener('click', DomHandler.toggleWeatherUnit)
 })
 
-function fetchWeather(event){
+async function fetchWeather(event){
   event.preventDefault()
-  const city = event.target[0].value
-  Service.getWeather(city)
+  const city = event.target[1].value
+   await Service(city)
   .then(data =>  {
     DomHandler.updateUi(data)
   })
