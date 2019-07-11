@@ -18,7 +18,7 @@ function render(){
   report.innerHTML = ''
   let header = document.createElement('h3')
   header.innerHTML = `<h3 class='city-head'>Weather for: ${weather.city}</h3>`
-  reading.innerHTML = `<h3> ${state === weather.c?'Celcious:':'Fahrenheit:'} ${state}°  <h5>  for: ${new Date()}</h5></h3>`
+  reading.innerHTML = `<h3> ${state === weather.c?'Celcious:':'Fahrenheit:'} ${state}°  <h5>  for: ${new Date().toLocaleDateString()}</h5></h3>`
   document.getElementById('toggle').disabled = false
   report.appendChild(header)
   report.appendChild(reading)
