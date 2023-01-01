@@ -22,9 +22,9 @@
   "devDependencies": {
     "@babel/core": "^7.5.0",
     "@babel/preset-env": "^7.5.3",
-    "babel-loader": "^8.0.6",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.5",
+    "babel-loader": "^8.3.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
     "webpack-dev-server": "^3.7.2"
   }
 }
